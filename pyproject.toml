@@ -16,7 +16,7 @@ build-backend = "hatchling.build"
 
 [tool.rye]
 managed = true
-dev-dependencies = []
+dev-dependencies = ["pytest>=8.0.1", "mypy>=1.8.0"]
 
 [tool.rye.workspace]
 members = ["awesome", "fabulous"]
