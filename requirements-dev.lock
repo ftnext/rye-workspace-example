@@ -10,3 +10,15 @@
 -e file:awesome
 -e file:fabulous
 -e file:.
+iniconfig==2.0.0
+    # via pytest
+mypy==1.8.0
+mypy-extensions==1.0.0
+    # via mypy
+packaging==23.2
+    # via pytest
+pluggy==1.4.0
+    # via pytest
+pytest==8.0.1
+typing-extensions==4.9.0
+    # via mypy
