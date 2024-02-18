@@ -22,6 +22,7 @@ dev-dependencies = ["pytest>=8.0.1", "mypy>=1.8.0"]
 members = ["awesome", "fabulous"]
 
 [tool.rye.scripts]
+test = { cmd = "pytest -sv --ff" }
 typecheck = { cmd = "mypy --explicit-package-bases ." }
 
 [tool.hatch.metadata]
@@ -29,3 +30,6 @@ allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/rye_workspace_example"]
+
+[tool.pytest.ini_options]
+addopts = "--import-mode importlib"
