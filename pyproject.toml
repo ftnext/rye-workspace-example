@@ -35,4 +35,5 @@ packages = ["src/rye_workspace_example"]
 addopts = "-sv --ff --import-mode importlib"
 
 [tool.mypy]
+ignore_missing_imports = true
 explicit_package_bases = true
