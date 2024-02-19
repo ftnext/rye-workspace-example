@@ -23,7 +23,7 @@ members = ["awesome", "fabulous"]
 
 [tool.rye.scripts]
 test = { cmd = "pytest" }
-typecheck = { cmd = "mypy --explicit-package-bases ." }
+typecheck = { cmd = "mypy ." }
 
 [tool.hatch.metadata]
 allow-direct-references = true
@@ -33,3 +33,6 @@ packages = ["src/rye_workspace_example"]
 
 [tool.pytest.ini_options]
 addopts = "-sv --ff --import-mode importlib"
+
+[tool.mypy]
+explicit_package_bases = true
